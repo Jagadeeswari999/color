@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Canvas</title>
+<style>
+
+body {
+            background-image: url('https://en.idei.club/uploads/posts/2023-06/thumbs/1686678303_en-idei-club-p-mint-green-yellow-dizain-pinterest-48.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+.container {
+ border: 1px solid black;
+ border-radius: 10px;
+ padding-bottom: 10px;
+ box-shadow: 0px 0px 20px black;
+ margin:500px;
+ margin-top: 30px;
+ }
+ 
+    h1{
+        height:300px;
+        width:300px;
+        border:1px solid black;
+    }
+    #redtext{
+        width:60px;
+        height:60px;
+        background-color:red;
+        border-radius: 60%;
+
+    }
+    #greentext{
+        width:60px;
+        height:60px;
+        background-color:green;
+        border-radius: 60%;
+    }
+    #pinktext{
+        width:60px;
+        height:60px;
+        background-color:pink;
+        border-radius: 60%;
+    }
+    #bluetext{
+        width:60px;
+        height:60px;
+        background-color:blue;
+        border-radius: 60%;
+
+    }
+    #yellowtext{
+        width:60px;
+        height:60px;
+        background-color:yellow;
+        border-radius: 60%;
+    }
+    #blacktext{
+        width:60px;
+        height:60px;
+        background-color:black;
+        border-radius: 60%;
+    }      
+    #red-bg{
+        width:60px;
+        height:60px;
+        background-color:red;
+        border-radius: 60%;
+
+    }
+    #green-bg{
+        width:60px;
+        height:60px;
+        background-color:green;
+        border-radius: 60%;
+    }
+    #pink-bg{
+        width:60px;
+        height:60px;
+        background-Color:pink;
+        border-radius: 60%;
+    }
+    #blue-bg{
+        width:60px;
+        height:60px;
+        background-color:blue;
+        border-radius: 60%;
+
+    }
+    #yellow-bg{
+        width:60px;
+        height:60px;
+        background-color:yellow;
+        border-radius: 60%;
+    }
+    #black-bg{
+        width:60px;
+        height:60px;
+        background-Color:black;
+        border-radius: 60%;
+    }
+    #cursive{
+        width: 60px;
+        height: 60px;
+        font-style:cursive;
+        border-radius: 60%;
+        background-color: yellowgreen;
+    }
+    #ic{
+        width: 60px;
+        height: 60px;
+        font-style: italic;
+        border-radius: 60%;
+        background-color: yellowgreen;
+    }
+    #normal{
+        width: 60px;
+        height: 60px;
+        font-style: normal;
+        border-radius: 60%;
+        background-color: yellowgreen;
+    }
+    #calibri{
+        width: 60px;
+        height: 60px;
+        font-style: calibri;
+        border-radius: 60%;
+        background-color: yellowgreen;
+
+    }
+    #Forte{
+        width: 60px;
+        height: 60px;
+        font-style: Forte;
+        border-radius: 60%;
+        background-color: yellowgreen;
+    }
+    #Gigi{
+        width: 60px;
+        height: 60px;
+        font-style: Gigi;
+        border-radius: 60%;
+        background-color: yellowgreen;
+    }
+    button{
+        width:50px;
+        height:50px;
+    }
+</style>
+</head>
+<body>
+    <center>
+        <div class="container">
+        <h1 contenteditable="true" id="text"></h1>
+        
+    <h3>Text Colour</h3>
+    <button id="redtext" onclick="textColorRed()"></button>
+    <button id="greentext" onclick="textColorGreen()"></button>
+    <button id="pinktext" onclick="textColorPink()"></button>
+    <button id="bluetext" onclick="textColorBlue()"></button>
+    <button id="yellowtext" onclick="textColorYellow()"></button>
+    <button id="blacktext" onclick="textColorBlack()"></button>
+    
+
+    <h4>Backgroundcolor</h4>
+
+    <button id="red-bg" onclick="backColorRed()"></button>
+    <button id="green-bg" onclick="backColorGreen()"></button>
+    <button id="pink-bg" onclick="backColorPink()"></button>
+    <button id="blue-bg" onclick="backColorBlue()"></button>
+    <button id="yellow-bg" onclick="backColorYellow()"></button>
+    <button id="black-bg" onclick="backColorBlack()"></button>
+
+    
+    <h5>Font style</h5>
+
+    <button id="cursive" onclick="cursive()">cursive</button>
+    <button id="ic" onclick="italic()">italic</button>
+    <button id="normal" onclick="normal()">normal</button>
+    <button id="calibri" onclick="calibri()">calibri</button>
+    <button id="Forte" onclick="Forte()">forte</button>
+    <button id="Gigi" onclick="Gigi()">Gigi</button>
+    
+    </div>
+</center>
+   
+   
+
+    <script>
+        function textColorRed(){
+            let t=document.getElementById("text")
+            t.style.color="red"
+        }
+        function textColorGreen(){
+            let t=document.getElementById("text")
+            t.style.color="Green"
+        }
+        function textColorPink(){
+            let t=document.getElementById("text")
+            t.style.color="Pink"
+        }
+        function textColorBlue(){
+            let t=document.getElementById("text")
+            t.style.color="blue"
+        }
+        function textColorYellow(){
+            let t=document.getElementById("text")
+            t.style.color="Yellow"
+        }
+        function textColorBlack(){
+            let t=document.getElementById("text")
+            t.style.color="Black"
+        }
+        function backColorRed(){
+            let t=document.getElementById("text")
+            t.style.backgroundColor="red"
+        }
+        function backColorGreen(){
+            let t=document.getElementById("text")
+            t.style.backgroundColor="green"
+        }
+        function backColorPink(){
+            let t=document.getElementById("text")
+            t.style.backgroundColor="Pink"
+        }
+        function cursive(){
+            let t=document.getElementById("text")
+            t.style.fontStyle="cursive"
+            t.style.fontFamily = "'cursive', 'cursive', cursive";
+
+        }
+        function italic(){
+            let t=document.getElementById("text")
+            t.style.fontStyle="italic"
+        }
+        function normal(){
+            let t=document.getElementById("text")
+            t.style.fontStyle="normal"
+        }
+        function calibri(){
+            let t=document.getElementById("text")
+            t.style.fontStyle="calibri"
+            t.style.fontFamily = "'calibri', 'calibri', calibri";
+        }
+        function Forte(){
+            let t=document.getElementById("text")
+            t.style.fontStyle="Forte"
+            t.style.fontFamily = "'Forte', 'Forte', Forte";
+        }
+        function Gigi(){
+            let t=document.getElementById("text")
+            t.style.fontStyle="Gigi"
+            t.style.fontFamily = "'Gigi', 'Gigi', Gigi";
+        }
+    </script>
+</body>
+</html> 
